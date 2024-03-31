@@ -4,16 +4,17 @@ Welcome to Saman, your ultimate destination for all your online shopping needs! 
 # Installation
 follow these steps:
 
-Clone the repository:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/girish104/saman-ecommerce.git
+   
+2. cd saman-ecommerce
 
-git clone https://github.com/girish104/saman-ecommerce.git
-cd saman-ecommerce
+3. Start Xampp | MySQL | Apache
 
-Start Xampp | MySQL | Apache
+4. Create new DB saman
 
-Create new DB saman
-
-import DB saman.sql
+5. import DB saman.sql
 
 Once you've completed these steps, you can access the Saman Ecommerce in your web browser. localhost/foldername/saman-ecommerce
 
