@@ -1,0 +1,84 @@
+.form-container {
+    /* height: 500px; */
+    width: 100vw;
+    /* background-color: antiquewhite; */
+    margin: auto;
+    /* top: 50px; */
+    /* margin-top: 90px; */
+    /* position: absolute; */
+    /* padding: 50px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+
+    /* height: 500px; */
+    width: 60vw;
+    /* background-color: rgb(197, 144, 74); */
+    margin-top: 3rem;
+    ;
+    position: absolute;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    padding: 0 90px;
+    /* grid-template-columns: ; */
+}
+
+.title {
+    font-size: 44px;
+    width: 100%;
+    /* border-bottom: 1px solid gray; */
+    /* background-color: aqua; */
+}
+
+.name {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    /* background-color: bisque; */
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.name input {
+    width: 100%;
+    height: 42px;
+    outline: none;
+    border-radius: 25px;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.address {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    /* background-color: bisque; */
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+
+.address input{
+    width: 100%;
+    height: 42px;
+    outline: none;
+    border-radius: 25px;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.address textarea{
+    width: 100%;
+    /* height: 42px; */
+    outline: none;
+    border-radius: 25px;
+    padding: 0 10px;
+    font-size: 15px;
+}

@@ -1,0 +1,136 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles for heading info */
+.heading-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.heading-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.heading-info span {
+  color: #333;
+}
+
+/* Styles for order table */
+.order-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+/* Styles for table header */
+.order-table th {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Styles for table data */
+.order-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Styles for order container */
+.order_container {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for order image */
+.order_container .img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Styles for order title */
+.order_container .title {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* Styles for order price */
+.order_container .price {
+  color: #007bff;
+}
+
+/* Pagination styles */
+#pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page-link {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page-link:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+  /* Styles for tablets */
+  .order-table th,
+  .order-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .order_container .img img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .order_container .title {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .order_container .price {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  /* Styles for mobile devices */
+  .order-table th,
+  .order-table td {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .order_container .img img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .order_container .title {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  .order_container .price {
+    font-size: 12px;
+  }
+}
