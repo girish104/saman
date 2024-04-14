@@ -1,5 +1,5 @@
 <?php
-require './includes/App.php';
+require '../includes/App.php';
 $app = new App;
 
 if (isset($_POST['userId'])) {

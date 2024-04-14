@@ -94,7 +94,7 @@ if (!empty($orders)) :
 <?php else : ?>
     <div id="empty-profile" class="m-8 flex flex-col justify-center items-center">
         <a href="#">
-            <img src="./emptyCart.4e943399.png" alt="" class="my-4 p-4">
+            <img src="images/emptyCart.4e943399.png" alt="" class="my-4 p-4">
         </a>
         <a href="view-all-products.php" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Shop Now</a>
     </div>

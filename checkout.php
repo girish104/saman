@@ -66,7 +66,7 @@
         function load_cart() {
             var userId = '<?php echo isset($_SESSION['userId']) ? $_SESSION['userId'] : '' ?>';
             $.ajax({
-                url: "update-cart.php",
+                url: "ajax/update-cart.php",
                 type: "POST",
                 data: {
                     userId: userId,
@@ -90,7 +90,7 @@
         function updateTotalPrice() {
             var userId = '<?php echo isset($_SESSION['userId']) ? $_SESSION['userId'] : '' ?>';
             $.ajax({
-                url: "get-cart-price.php", // PHP file to get the updated cart price
+                url: "ajax/get-cart-price.php", // PHP file to get the updated cart price
                 type: "POST",
                 data: {
                     userId: userId,
@@ -135,7 +135,7 @@
             $("#payWithPaytmBtn").click(function() {
 
                 $.ajax({
-                    url: "pay.php",
+                    url: "ajax/pay.php",
                     type: "POST",
                     data: {
                         productIds: productIds,

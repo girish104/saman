@@ -35,7 +35,7 @@
 
         // Make the AJAX request with the search query value
         $.ajax({
-            url: "load_allSearchProducts.php",
+            url: "ajax/load_allSearchProducts.php",
             type: "GET",
             data: {
                 value: searchValue, // Pass the search query value here
@@ -63,7 +63,7 @@
         function load_viewAll() {
             var userId = '<?php echo isset($_SESSION['userId']) ? $_SESSION['userId'] : ''; ?>';
             $.ajax({
-                url: "add-cart-view-all-load.php",
+                url: "ajax/add-cart-view-all-load.php",
                 type: "POST",
                 data: {
                     userId: userId,
@@ -91,7 +91,7 @@
             var button = $(this);
             if (userId) {
                 $.ajax({
-                    url: 'add-to-cart.php',
+                    url: 'ajax/add-to-cart.php',
                     type: 'POST',
                     data: {
                         productId: productId,

@@ -73,37 +73,12 @@ $products = $app->selectAll($selectQuery);
             </button>
         </div>
     </div>
-    <div class="categories">
-        <div class="categories-boxes">
-            <div class="box">
-                <p>man</p>
-            </div>
-            <div class="box">
-                <p>women</p>
-            </div>
-            <div class="box">
-                <p>kids</p>
-            </div>
-            <div class="box">
-                <p>appliances</p>
-            </div>
-            <div class="box">
-                <p>electronics</p>
-            </div>
-            <div class="box">
-                <p>crafts</p>
-            </div>
-            <div class="box">
-                <p>grocery</p>
-            </div>
-            <div class="box">
-                <p>furniture</p>
-            </div>
-        </div>
-    </div>
+    <?php require "./includes/categories.php"; ?>
+
 </section>
 <script src="./jquery.js"></script>
 <script src="products-box.js"></script>
+
 <script>
     $(document).ready(function() {
         // Add click event handler for "Add to Cart" button
@@ -114,7 +89,7 @@ $products = $app->selectAll($selectQuery);
             var button = $(this);
             if (userId) {
                 $.ajax({
-                    url: 'add-to-cart.php',
+                    url: 'ajax/add-to-cart.php',
                     type: 'POST',
                     data: {
                         productId: productId,
@@ -131,59 +106,6 @@ $products = $app->selectAll($selectQuery);
                 window.location.href = 'login.php';
             }
         });
-
-        function load_wishlist() {
-            var userId = '<?php echo isset($_SESSION['userId']) ? $_SESSION['userId'] : '' ?>';
-            $.ajax({
-                url: "load-wishlist-index.php",
-                type: "POST",
-                data: {
-                    userId: userId,
-                },
-                success: function(data) {
-                    if (data) {
-                        var wishlist = JSON.parse(data);
-                        $('.add-to-wishlist').each(function() {
-                            var productId = $(this).data('product-id');
-                            if (wishlist.includes(productId)) {
-                                $(this).html("<i class='fa-solid fa-heart' style='color: #ff0000;'></i>");
-                            } else {
-                                $(this).html("<i class='fa-regular fa-heart'></i>");
-                            }
-                        });
-                    }
-                }
-            })
-        }
-
-        load_wishlist();
-
-        function add_to_wishlist() {
-
-            $(document).on("click", ".add-to-wishlist", function(e) {
-                var userId = '<?php echo isset($_SESSION['userId']) ? $_SESSION['userId'] : '' ?>';
-                var productId = $(this).data('product-id');
-                e.preventDefault();
-                $.ajax({
-                    url: "add-to-wishlist.php",
-                    type: "POST",
-                    data: {
-                        productId: productId,
-                        userId: userId,
-                    },
-                    success: function(data) {
-                        console.log(data);
-                        if (data) {
-                            load_wishlist();
-                        }
-                    }
-
-                });
-            });
-        }
-
-        add_to_wishlist();
-
 
     })
 </script>

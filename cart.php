@@ -50,7 +50,7 @@
 </div>
 <div class="empty-cart">
     <a href="index.php">
-        <img src="./100042121862329.60ce32d236844.png" alt="">
+        <img src="images/100042121862329.60ce32d236844.png" alt="">
     </a>
 </div>
 
@@ -63,7 +63,7 @@
         function load_cart() {
             var userId = "<?php echo isset($_SESSION['userId']) ? $_SESSION['userId'] : '' ?>";
             $.ajax({
-                url: "update-cart.php",
+                url: "ajax/update-cart.php",
                 type: "POST",
                 data: {
                     userId: userId,
@@ -83,7 +83,7 @@
             var productId = $(this).data('product-id');
             e.preventDefault();
             $.ajax({
-                url: "delete-cart.php",
+                url: "ajax/delete-cart.php",
                 type: "POST",
                 data: {
                     productId: productId,
@@ -105,7 +105,7 @@
         function updateTotalPrice() {
             var userId = '<?php echo isset($_SESSION['userId']) ? $_SESSION['userId'] : '' ?>';
             $.ajax({
-                url: "get-cart-price.php", // PHP file to get the updated cart price
+                url: "ajax/get-cart-price.php", // PHP file to get the updated cart price
                 type: "POST",
                 data: {
                     userId: userId,

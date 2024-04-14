@@ -1,4 +1,4 @@
-<?php require './includes/App.php'; ?>
+<?php require '../includes/App.php'; ?>
 <?php $app = new App;
 $app->startingSession(); ?>
 <?php

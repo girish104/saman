@@ -1,5 +1,5 @@
 <?php
-require './includes/App.php';
+require '../includes/App.php';
 
 ?>
 
