@@ -68,8 +68,7 @@
     </div>
 </footer>
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="javascript/burger.js"></script>
+
 <script src="javascript/script.js"></script>
 <!-- <script src="script.js"></script> -->
 

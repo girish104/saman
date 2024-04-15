@@ -9,8 +9,17 @@ if (isset($_GET['id'])) {
   $product_id = $_GET['id'];
   $selectSingleQuery = "SELECT * FROM products WHERE product_id = $product_id";
   $product = $app->selectOne($selectSingleQuery);
-}
+  if (!$product) {
+    header("HTTP/1.0 404 Not Found");
+    include("404.php");
+    exit();
+  }
+} else {
 
+  header("HTTP/1.0 404 Not Found");
+  include("404.php");
+  exit();
+}
 
 ?>
 
