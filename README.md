@@ -6,7 +6,7 @@ follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/girish104/saman-ecommerce.git
+   git clone https://github.com/girish104/saman.git
    
 2. cd saman-ecommerce
 
