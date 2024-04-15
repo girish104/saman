@@ -178,15 +178,15 @@ section .hero {
     }
 
     25% {
-        background-image: url('..gallery/man.jpg');
+        background-image: url('../gallery/man.jpg');
     }
 
     50% {
-        background-image: url('..gallery/furniture.jpg');
+        background-image: url('../gallery/furniture.jpg');
     }
 
     75% {
-        background-image: url('..gallery/women.jpg');
+        background-image: url('../gallery/women.jpg');
     }
 
     100% {
@@ -529,43 +529,43 @@ section .categories .categories-boxes .box:nth-child(1) {
 }
 
 section .categories .categories-boxes .box:nth-child(2) {
-    background: url(..gallery/women.jpg);
+    background: url(../gallery/women.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section .categories .categories-boxes .box:nth-child(3) {
-    background: url(..gallery/kids.jpg);
+    background: url(../gallery/kids.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section .categories .categories-boxes .box:nth-child(4) {
-    background: url(..gallery/applinces.jpg);
+    background: url(../gallery/applinces.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section .categories .categories-boxes .box:nth-child(5) {
-    background: url(..gallery/electronics.jpg);
+    background: url(../gallery/electronics.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section .categories .categories-boxes .box:nth-child(6) {
-    background: url(..gallery/crafts.jpg);
+    background: url(../gallery/crafts.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section .categories .categories-boxes .box:nth-child(7) {
-    background: url(..gallery/grocery.jpg);
+    background: url(../gallery/grocery.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section .categories .categories-boxes .box:nth-child(8) {
-    background: url(..gallery/furniture.jpg);
+    background: url(../gallery/furniture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
