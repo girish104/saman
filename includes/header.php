@@ -17,60 +17,56 @@ $app->startingSession(); ?>
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo APPURL; ?>/style.css?v=<?php $version ?>" />
+    <link rel="stylesheet" href="<?php echo APPURL; ?>/css/style.css?v=<?php $version ?>" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- profile css link -->
 
     <?php if ($_SERVER['PHP_SELF'] === '/saman/profile.php') : ?>
-        <link rel="stylesheet" href="profile.css">
+        <link rel="stylesheet" href="../css/profile.css">
     <?php endif; ?>
 
     <!-- cart css link -->
 
     <?php if ($_SERVER['PHP_SELF'] === '/saman/cart.php') : ?>
-        <link rel="stylesheet" href="cart.css">
+        <link rel="stylesheet" href="../css/cart.css">
     <?php endif; ?>
 
     <!-- wishlist css link -->
 
-    <?php if ($_SERVER['PHP_SELF'] === '/saman/wishlist.php') : ?>
-        <link rel="stylesheet" href="wishlist.css">
-    <?php endif; ?>
-
     <!-- view all products css link -->
 
     <?php if ($_SERVER['PHP_SELF'] === '/saman/view-all-products.php') : ?>
-        <link rel="stylesheet" href="view-all-products.css?v=<?php $version; ?>">
+        <link rel="stylesheet" href="../css/view-all-products.css?v=<?php $version; ?>">
     <?php endif; ?>
 
     <!-- single product css link -->
 
     <?php if ($_SERVER['PHP_SELF'] === '/saman/single-product.php') : ?>
-        <link rel="stylesheet" href="single-product.css?v=<?php $version; ?>">
+        <link rel="stylesheet" href="../css/single-product.css?v=<?php $version; ?>">
     <?php endif; ?>
 
     <!-- single buy cart css link -->
 
     <?php if ($_SERVER['PHP_SELF'] === '/saman/search-results.php') : ?>
-        <link rel="stylesheet" href="search-results.css?v=<?php $version; ?>">
+        <link rel="stylesheet" href="../css/search-results.css?v=<?php $version; ?>">
     <?php endif; ?>
 
 
     <!-- checkout css link -->
 
     <?php if ($_SERVER['PHP_SELF'] === '/saman/checkout.php') : ?>
-        <link rel="stylesheet" href="checkout.css?v=<?php $version; ?>">
+        <link rel="stylesheet" href="../css/checkout.css?v=<?php $version; ?>">
     <?php endif; ?>
 
     <!-- pay css link -->
 
     <?php if ($_SERVER['PHP_SELF'] === '/saman/pay.php') : ?>
-        <link rel="stylesheet" href="pay.css?v=<?php $version; ?>">
+        <link rel="stylesheet" href="../css/pay.css?v=<?php $version; ?>">
     <?php endif; ?>
 
-    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="../css/font.css">
     <title>saman - Find All Your Favorite Brands Here</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -117,5 +113,5 @@ $app->startingSession(); ?>
 
 
 
-    <script src="burger.js"></script>
+    <script src="javascript/burger.js"></script>
     <div id="content"></div>
