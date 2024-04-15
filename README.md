@@ -16,6 +16,6 @@ follow these steps:
 
 5. import DB saman.sql
 
-Once you've completed these steps, you can access the Saman Ecommerce in your web browser. localhost/foldername/saman-ecommerce
+Once you've completed these steps, you can access the Saman Ecommerce in your web browser. localhost/saman
 
 If you have any questions or encounter any issues during the installation process, feel free to reach out to us.     
