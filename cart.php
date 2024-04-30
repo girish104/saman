@@ -26,7 +26,7 @@
                                 </tr>
                             </thead>
                             <tbody id="table-body">
-                                <!-- Your PHP code for generating cart items will go here -->
+                                <!-- PHP code for generating cart items will go here -->
                             </tbody>
                         </table>
                     </div>
