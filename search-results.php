@@ -20,8 +20,6 @@
 </div>
 <script src="./jquery.js"></script>
 
-<!-- Rest of the JavaScript code remains unchanged -->
-
 </script>
 
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
@@ -59,7 +57,6 @@
             return decodeURIComponent(results[2].replace(/\+/g, ' '));
         }
 
-        // Function to load additional view related to products
         function load_viewAll() {
             var userId = '<?php echo isset($_SESSION['userId']) ? $_SESSION['userId'] : ''; ?>';
             $.ajax({
