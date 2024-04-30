@@ -25,8 +25,6 @@
 </div>
 <script src="./jquery.js"></script>
 
-<!-- Rest of the JavaScript code remains unchanged -->
-
 </script>
 
 <script>
