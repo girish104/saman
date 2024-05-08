@@ -84,7 +84,8 @@ $app->startingSession(); ?>
         <div class="search">
             <form id="searchForm" action="search-results.php" method="GET">
                 <input type="search" name="value" id="searchInput" placeholder="Search for Products, Brands and More">
-                <button type="submit"><i class="fas fa-search"></i></button>
+                <i class="fas fa-search"></i>
+                <button type="submit" hidden></button>
             </form>
         </div>
         <div class="header-items">
