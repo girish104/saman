@@ -169,7 +169,7 @@ section .hero {
     background-position: center;
     align-items: center;
     justify-content: end;
-    animation: changeBackground 30s infinite;
+    animation: changeBackground 10s ease-in-out infinite;
 }
 
 @keyframes changeBackground {
